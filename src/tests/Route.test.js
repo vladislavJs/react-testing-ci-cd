@@ -16,7 +16,6 @@ describe('Test Routing', ()=> {
         userEvent.click(main_page)
         expect(main_link).toBeInTheDocument()
         userEvent.click(about_link)
-        screen.debug()
         expect(screen.getByTestId("about-page")).toBeInTheDocument()
     });
 
