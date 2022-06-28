@@ -19,7 +19,7 @@ describe('Test counter component', () => {
     test('decrement', () => {
         renderWithProvider(<Counter/>, {counter: {value: 10}})
         expect(screen.getByTestId('counter-value')).toHaveTextContent("10")
-        const decrementBtn = screen.getByTestId("counter-decrement")
+        const decrementBtn = screen.getByTestId("counter-decremen1t")
         userEvent.click(decrementBtn)
         expect(screen.getByTestId("counter-value")).toHaveTextContent("9")
     })
